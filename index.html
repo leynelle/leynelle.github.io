@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/267ef2a0b6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>leynelle...</title>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="home">LEYNELLE</h1>
+                <ul id="sidemenu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+             </nav>
+             <img src="images/background.png" class="profile">
+             <div class="header-text">
+                 <h1>Hello <br>
+                 I'm <span class="ley">
+                    <span class="a">L</span>
+                    <span class="b">e</span>
+                    <span class="c">y</span>
+                    <span class="d">n</span>
+                    <span class="e">e</span>
+                    <span class="f">l</span>
+                    <span class="g">l</span>
+                    <span class="h">e</span>
+                </span> Petalver</h1>
+                 <p>Front-End Developer</p>
+                 <p class="desc">Passionate front-end developer and UI/UX designer, combining technical skills and creativity to create engaging and intuitive user interfaces.</p>
+             </div>
+             <a href="images/my-cv.pdf" download="" class="btn btn2">Download CV</a>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <hr class="line">
+            <h1 class="sub-title">About Me</h1>
+        <div class="row">
+            <div class="about-col-1">
+                    <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                    <p>I'm Leynelle Emerson Petalver, an aspiring front-end developer from the Philippines. I specialize in designing and building visually appealing and interactive websites using front-end technologies such as HTML, CSS, JavaScript, and React. My ultimate goal is to become a successful front-end developer and contribute to the development of amazing websites and web applications.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span>
+                            <br>HTML | CSS | Bootstrap | JavaScript</li>
+                            <li><span>Design</span>
+                                <br>PhotoShop | Illustrator | Figma | Canva</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>University of Luzon</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li class="warning"><span class="warning1">2022</span><br>Page is under construction!</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <hr class="line">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End</h2>
+                    <p>Front-end development creates the user interface and experience of websites or apps using HTML, CSS, and JavaScript.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>UI Design</h2>
+                    <p>UI design creates visually appealing and user-friendly interfaces for websites or apps, including layout, colors, typography, and user flow.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Graphic design involves creating visual content using typography, illustrations, and images to communicate ideas or messages to a specific audience, often for branding or marketing purposes.
+
+
+
+
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <hr class="line">
+        <h1 class="sub-title">Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Contact Tracing & Attendance System</h3>
+                    <p>School Capstone Project for preparation  of the incoming face-to-face classes during the spread of covid-19 virus.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>University Weboage Design</h3>
+                    <p>Recreate and improving the desin of the University Website.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Branding for Business</h3>
+                    <p>Small bussines logo & Product branding design.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"></i>Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>leynelle.ep@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0936-186-3766</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/emerson.cabalozapetalver/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/leynelle/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.behance.net/leynellpetalve"><i class="fa-brands fa-square-behance"></i></a>
+                </div>
+            </div>
+            <!-- <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" id="" placeholder="Your Message" rows="6"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,429 @@
+:root{
+    --bg-color:hsl(25, 29%, 92%);
+    --text1:#1c1763;
+    --line:hsl(182, 100%, 47%);
+    --pink:hsl(338, 86%, 55%);
+    --blue: hsl(201, 80%, 35%);
+    --orange: hsl(40, 95%, 57%);
+    --mage:hsl(306, 65%, 28%);
+    --home:'Bruno Ace SC', cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text1);
+}
+.profile{
+    position: absolute;
+    z-index: -1;
+    right: 20%;
+    bottom: 30%;
+}
+.header-text h1 span .a,.b,.c,.d,.e,.f,.g,.h{
+    margin: 0 -6px;
+}
+.header-text h1 span .a:hover {
+    color: var(--pink);
+    /* transition: 0.2s; */
+}
+.header-text h1 span .b:hover{
+    color: var(--pink);
+}
+.header-text h1 span .c:hover{
+    color: var(--pink);
+}
+.header-text h1 span .d:hover{
+    color: var(--pink);
+}
+.header-text h1 span .e:hover{
+    color: var(--pink);
+}
+.header-text h1 span .f:hover{
+    color: var(--pink);
+}
+.header-text h1 span .g:hover{
+    color: var(--pink);
+}
+.header-text h1 span .h:hover{
+    color: var(--pink);
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    padding: 10px 10%;
+}
+.home{
+    font-family:var(--home);
+    font-size: 2rem;
+    color: var(--text1);
+}
+nav{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: var(--text1);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: var(--line);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top:25%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+}
+.header-text h1 span{
+    color: var(--line);
+}
+.desc{
+    font-size: 1rem;
+    width: 60%;
+}
+.line{
+    margin: 25px 0;
+    border: 5px solid rgb(211, 211, 211);
+    border-radius: 50px;
+    opacity: 0.2;
+}
+/* about */
+#about{
+    padding:80px 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.about-col-2 p{
+    margin-top: 10%;
+}
+.sub-title{
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--line);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 80%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 5px 0;
+}
+.tab-contents ul .warning1{
+    color: black;
+    font-size: 10px;
+}
+.tab-contents ul .warning{
+    background-color: rgba(245, 170, 32,0.5);
+    border-radius: 5px;
+    padding: 14px;
+    width: 50%;
+    font-size: 10px;
+    color: black;
+}
+.tab-contents ul li span{
+    color: var(--line);
+    font-size: 15px;
+    font-weight: 700;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* services */
+#services{
+    padding: 30px 0;
+
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: var(--line);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: var(--text1);
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: 600;
+}
+.services-list div:hover{
+    background: var(--bg-color);
+    transform: translateY(-10px);
+}
+/* portfolio */
+#portfolio{
+    padding:50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 100% ;
+    background: linear-gradient(rgba(0, 247, 255, 0.6), var(--bg-color));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: var(--bg-color);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: var(--text1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid var(--bg-color);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: var(--text1);
+    color: var(--bg-color);
+    transition: background 0.5s;
+}
+.btn:hover{
+    background-color: var(--line);
+}
+/* contact */
+.contact-left{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+/* .contact-right{
+    flex-basis: 100%;
+} */
+#contact{
+    background-color:rgb(211, 211, 211);
+}
+.contact-left p{
+    margin-top: 30px
+}
+.contact-left p i{
+    color: var(--text1);
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    color: var(--text1);
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: var(--line);
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: var(--line);
+    color: var(--text1);
+    font-weight: 600;
+}
+/* .contact-right form{
+    width: 100%;
+} */
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    color: var(--text1);
+    font-size: 18px;
+    border-radius: 6px;
+}
+/* css for small screen */
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    .profile{
+        right: 0;
+        bottom: 40%;
+    }
+    .header-text{
+        margin-top: 90%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 45px
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: var(--bg-color);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 20px;
+        left: 125px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 30px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+}
+
